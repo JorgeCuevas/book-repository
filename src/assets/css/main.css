@@ -1,0 +1,20 @@
+.imgBook{
+  width: 100px;
+  height: 100px;
+}
+
+.btn-mark{
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+.btn-likes{
+  background: #658BF4;
+}
+
+.btn-unlikes{
+  background: #F44336;
+}

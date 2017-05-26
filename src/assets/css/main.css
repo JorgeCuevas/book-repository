@@ -1,6 +1,16 @@
-.imgBook{
-  width: 100px;
-  height: 100px;
+.img-catalog{
+  width: 300px;
+  height: 400px;
+}
+
+.img-detail{
+  width: 500px;
+  height: 650px;
+
+}
+
+.text-detail{
+  padding-left: 30px;
 }
 
 .btn-mark{

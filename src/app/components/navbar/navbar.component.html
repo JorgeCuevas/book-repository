@@ -1,12 +1,14 @@
 <nav class="indigo" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container"  routerLink="" routerLinkActive="active" class="brand-logo">Foreadev</a>
+      <a id="logo-container"  [routerLink]="['']" [routerLinkActive]="['active']" class="brand-logo">Foreadev</a>
 
 
       <ul class="right hide-on-med-and-down">
         <li><a href="sass.html"><i class="material-icons left">search</i>Search</a></li>
-        <li><a routerLink="catalog" routerLinkActive="active" ><i class="material-icons right">view_module</i>Catalog</a></li>
-        <li><a ><i class="material-icons right">perm_identity</i></a></li>
+        <li><a [routerLink]="['catalog']" [routerLinkActive]="['active']" ><i class="material-icons right">view_module</i>Catalog</a></li>
+
+        <li><a ><i class="material-icons right"  [routerLinkActive]="['active']"  >perm_identity</i></a></li>
+        <li><a ><i class="material-icons left"  [routerLinkActive]="['active']">shopping_cart</i></a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">

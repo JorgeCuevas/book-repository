@@ -5,10 +5,10 @@
     <div class="col s6 m4" *ngFor="let book of books"   >
         <div class="card">
           <div class="card-image">
-            <img  src="{{book.img}}">
+            <img  class="img-catalog" [src]="book.img">
             <span class="card-title">{{book.title}}</span>
 
-            <a class="btn-floating halfway-fab waves-effect waves-light green"  ><i class="material-icons">add</i></a>
+            <a class="btn-floating halfway-fab waves-effect waves-light green" (click)="onBoookSelect(book)"  ><i class="material-icons">add</i></a>
           </div>
           <div class="card-content">
             <h6>Author:</h6>

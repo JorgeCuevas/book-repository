@@ -1,3 +1,27 @@
-<p>
-  book-detail works!
-</p>
+
+  <div class="container ">
+    <br>
+    <div class="row">
+                  <div class="col s12 m6">
+                    <img [src]="selectedBook.img" class="img-detail" alt="">
+                  </div>
+            <div class="col s12 m6">
+              <div class="card blue darken-3">
+                <div class="card-content white-text">
+                  <span class="card-title">{{selectedBook.title}}</span>
+                      <h6>Author: {{selectedBook.author}}</h6>
+                  <p>{{selectedBook.description}}.</p>
+
+                <p>No. Pages:  {{selectedBook.numOfPages}}</p>
+                <p>Chapters:  {{selectedBook.chapters}}</p>
+                  <hr>
+                <h2>Price : {{selectedBook.price | currency:'USD':true:'1.2-2'}}</h2>
+                </div>
+                <div class="card-action">
+                  <a href="#">Buy it now.</a>
+                  <a href="#">Add to the car.</a>
+                </div>
+              </div>
+            </div>
+          </div>
+  </div>

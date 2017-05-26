@@ -6,7 +6,7 @@ import {Book} from '../interfaces/book';
 export class BookService {
   books: Array<Book> = [
     {
-      id: 4849849,
+      id: 1239849,
       title: 'Beggining Java EE 7',
       author: 'Antonio Goncalves',
       description: 'This book show a easy way to develop webapps with Java EE',
@@ -21,7 +21,7 @@ export class BookService {
        tags:['Java']
     },
     {
-      id: 4849849,
+      id: 6949849,
       title: 'Design Patterns with Java',
       author: 'Elisabeth Robson',
       description: 'At any given moment, someone struggles with the same software design problems you have. And, chances are, someone else has already solved your problem. This edition of Head First Design Patterns—now updated for Java 8—shows you the tried-and-true, road-tested patterns used by developers...',
@@ -56,5 +56,9 @@ export class BookService {
 
   getBooks() {
     return this.books;
+  }
+
+  getBookById(id:number):Book{
+    return this.books.find((book) => book.id == id);
   }
 }

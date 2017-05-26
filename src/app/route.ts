@@ -8,7 +8,7 @@ import { BookDetailComponent } from './components/book-detail/book-detail.compon
 const appRoutes :Routes = [
   {path:'', component: HomeComponent},
   {path:'catalog', component: CatalogComponent},
-  {path:'book/:id', component: BookDetailComponent},
+  {path:'book-details/:id', component: BookDetailComponent},
   {path:'**', component: NotfoundComponent},
 ];
 
